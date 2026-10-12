@@ -8,12 +8,17 @@ public class OnlineExam {
         System.out.println("3. View Results");
     }
 
+    public static boolean login(String username, String password) {
+        return username != null && !username.isBlank()
+                && password != null && !password.isBlank();
+    }
+
     public static int calculateScore(int correctAnswers) {
         return correctAnswers;
     }
-    
+
     public static boolean isPassing(int score) {
         return score >= 40;
     }
-
 }
+
