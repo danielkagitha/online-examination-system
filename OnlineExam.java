@@ -16,4 +16,9 @@ public class OnlineExam {
     public static int calculateScore(int correctAnswers) {
         return correctAnswers;
     }
+
+    public static boolean isPassing(int score) {
+        return score >= 40;
+    }
 }
+
